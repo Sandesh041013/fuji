@@ -184,7 +184,9 @@
   font-weight: 600;
   letter-spacing: 0.04em;
 }
-
+.Image {
+  object-fit: contain;
+}
 /* ── Responsive ── */
 @media (max-width: 900px) {
   .story { grid-template-columns: 1fr; gap: 48px; }

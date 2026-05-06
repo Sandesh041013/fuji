@@ -1,1 +1,7 @@
-{"/_error":"pages/_error.js","/_app":"pages/_app.js","/contact":"pages/contact.html","/_document":"pages/_document.js","/about":"pages/about.html","/courses/jft":"pages/courses/jft.html","/courses/jlpt":"pages/courses/jlpt.html","/gallery":"pages/gallery.html","/services":"pages/services.html","/":"pages/index.html","/courses/nat":"pages/courses/nat.html","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/about": "pages/about.js"
+}
