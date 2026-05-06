@@ -20,11 +20,21 @@ export default function Navbar() {
   }, [router.pathname]);
 
   const links = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
-    { href: '/contact', label: 'Contact' },
-  ];
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/services', label: 'Services' },
+  {
+    href: '/courses',
+    label: 'Courses',
+    dropdown: [
+      { href: '/courses/jft', label: 'JFT' },
+      { href: '/courses/jlpt', label: 'JLPT' },
+      { href: '/courses/nat', label: 'NAT' },
+    ],
+  },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/contact', label: 'Contact' },
+];
 
   const isActive = (href) =>
     href === '/' ? router.pathname === '/' : router.pathname.startsWith(href);
@@ -46,17 +56,28 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <ul className={styles.links}>
-          {links.map(({ href, label }) => (
-            <li key={href}>
-              <Link
-                href={href}
-                className={`${styles.link} ${isActive(href) ? styles.active : ''}`}
-              >
-                {label}
-              </Link>
-            </li>
+  {links.map((item) => (
+    <li key={item.href} className={styles.navItem}>
+      <Link
+        href={item.href}
+        className={`${styles.link} ${isActive(item.href) ? styles.active : ''}`}
+      >
+        {item.label}
+      </Link>
+
+      {/* Dropdown */}
+      {item.dropdown && (
+        <div className={styles.dropdown}>
+          {item.dropdown.map((sub) => (
+            <Link key={sub.href} href={sub.href} className={styles.dropdownItem}>
+              {sub.label}
+            </Link>
           ))}
-        </ul>
+        </div>
+      )}
+    </li>
+  ))}
+</ul>
 
         {/* CTA */}
         <Link href="/contact" className={styles.cta}>

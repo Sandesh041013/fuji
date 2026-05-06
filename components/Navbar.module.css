@@ -243,3 +243,43 @@
 :global(.hero-page) .nav:not(.scrolled) .link.active {
   color: rgba(255,255,255,0.8);
 }
+/* Parent */
+.navItem {
+  position: relative;
+}
+
+/* Dropdown */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0f0f0f;
+  border: 1px solid #222;
+  border-radius: 8px;
+  min-width: 160px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+/* Show on hover */
+.navItem:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Items */
+.dropdownItem {
+  display: block;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdownItem:hover {
+  background: #111;
+}

@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/about": "pages/about.js",
+  "/courses/jft": "pages/courses/jft.js",
+  "/courses/jlpt": "pages/courses/jlpt.js",
   "/contact": "pages/contact.js",
-  "/services": "pages/services.js"
+  "/courses/nat": "pages/courses/nat.js"
 }
