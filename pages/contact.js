@@ -191,20 +191,27 @@ export default function Contact() {
               </div>
 
               {/* Offices */}
-              <div className={styles.sideCard}>
-                <h4 className={styles.sideTitle}>Global Offices</h4>
-                <div className={styles.officeList}>
-                  {offices.map(({ city, address, flag }) => (
-                    <div key={city} className={styles.office}>
-                      <span className={styles.officeFlag}>{flag}</span>
-                      <div>
-                        <div className={styles.officeCity}>{city}</div>
-                        <div className={styles.officeAddress}>{address}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+           {/* Map */}
+<div className={styles.sideCard}>
+  <h4 className={styles.sideTitle}>Our Location</h4>
+
+  <div style={{
+    width: '100%',
+    height: '300px',
+    borderRadius: '10px',
+    overflow: 'hidden'
+  }}>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7065.765044405892!2d83.462710019117!3d27.69002557785575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996870050fd64cb%3A0x3423c86c678d0c08!2sFuji%20International%20Consultancy!5e0!3m2!1sen!2snp!4v1778056301455!5m2!1sen!2snp"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
             </div>
           </div>
         </div>
