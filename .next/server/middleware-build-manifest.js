@@ -29,25 +29,15 @@ self.__BUILD_MANIFEST = {
       "static/chunks/main.js",
       "static/chunks/pages/about.js"
     ],
-    "/contact": [
+    "/services": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/contact.js"
+      "static/chunks/pages/services.js"
     ],
-    "/courses/jft": [
+    "/universities": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/courses/jft.js"
-    ],
-    "/courses/jlpt": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/courses/jlpt.js"
-    ],
-    "/courses/nat": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/courses/nat.js"
+      "static/chunks/pages/universities.js"
     ]
   },
   "ampFirstPages": []

@@ -155,11 +155,17 @@ img { max-width: 100%; display: block; }
 }
 
 @media (max-width: 960px) {
-  .grid-3, .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 640px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  :root { --nav-height: 64px; }
+}
+
+@media (max-width: 420px) {
+  :root { --nav-height: 56px; }
 }
 
 /* ── Animations ── */

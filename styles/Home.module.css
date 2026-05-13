@@ -165,7 +165,7 @@
 }
 
 /* ── Stats ── */
-.statsSection {}
+
 
 .statsGrid {
   text-align: center;
@@ -200,15 +200,185 @@
 
 .cardsGrid {
   margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
 }
 
 .servicesMore {
   text-align: center;
   margin-top: 40px;
 }
+.statsSection {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #ffffff, #f9fafb);
+}
 
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0;
+}
+
+.mapContainer {
+  margin: 2rem 0 4rem;
+  background: linear-gradient(to bottom, rgba(239, 68, 68, 0.03), rgba(239, 68, 68, 0.06));
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.mapSvg {
+  width: 100%;
+  height: auto;
+  min-height: 300px;
+}
+
+.connectingLine {
+  stroke: #EF4444;
+  stroke-width: 3;
+  fill: none;
+  stroke-dasharray: 8, 4;
+  opacity: 0.6;
+}
+
+.circleBg {
+  fill: #FEE2E2;
+  stroke: #EF4444;
+  stroke-width: 2;
+}
+
+.flag {
+  font-size: 80px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+.pulsingCircle {
+  fill: #FEE2E2;
+  stroke: #EF4444;
+  stroke-width: 2;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+.pulsingDot {
+  fill: #EF4444;
+  animation: pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    r: 12px;
+    opacity: 1;
+  }
+  50% {
+    r: 18px;
+    opacity: 0.5;
+  }
+}
+
+.countryLabel {
+  font-size: 18px;
+  font-weight: 600;
+  fill: #1a1a1a;
+  text-anchor: middle;
+}
+
+.statCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.statCard:hover {
+  box-shadow: 0 8px 24px rgba(239, 68, 68, 0.15);
+  transform: translateY(-4px);
+}
+
+.statValue {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #EF4444;
+  margin-bottom: 0.75rem;
+}
+
+.statLabel {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.statsGrid {
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 1.8rem;
+  }
+
+  .mapContainer {
+    padding: 1rem;
+  }
+
+  .statCard {
+    padding: 1.5rem;
+  }
+
+  .statValue {
+    font-size: 2rem;
+  }
+
+  .countryLabel {
+    font-size: 16px;
+  }
+
+  .flag {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .statsGrid {
+    gap: 1rem;
+  }
+
+  .statCard {
+    padding: 1rem;
+  }
+
+  .statValue {
+    font-size: 1.75rem;
+  }
+
+  .statLabel {
+    font-size: 0.85rem;
+  }
+
+  .flag {
+    font-size: 50px;
+  }
+}
 /* ── About Strip ── */
-.aboutStrip {}
+.aboutStrip {
+  padding: 36px 0;
+}
 
 .aboutInner {
   display: grid;
@@ -350,6 +520,126 @@
 .ctaSub {
   color: rgba(255,255,255,0.75);
   font-size: 1rem;
+}
+
+/* ── Student achievements slider ── */
+.achievementsSection { padding: 48px 0; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); }
+
+.slider { overflow: hidden; position: relative; }
+.slideTrack {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+  animation: slide 18s linear infinite;
+}
+
+.studentCard {
+  min-width: 220px;
+  max-width: 220px;
+  background: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.studentImg {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.studentName { font-weight: 700; color: #111827; margin-bottom: 6px; }
+.studentNote { font-size: 0.9rem; color: #6b7280; }
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 900px) {
+  .slideTrack { animation-duration: 14s; }
+  .studentCard { min-width: 180px; max-width: 180px; }
+}
+
+@media (max-width: 480px) {
+  .slideTrack { animation-duration: 10s; gap: 12px; }
+  .studentCard { min-width: 150px; max-width: 150px; }
+}
+
+/* ── Industries ── */
+.industriesSection {
+  padding: 56px 0;
+}
+
+.industryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.industryCard {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.06);
+  border: 1px solid rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.industryIcon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.industryTitle {
+  font-weight: 700;
+}
+
+/* ── Workflow ── */
+.workflowSection {
+  padding: 48px 0;
+}
+
+.workflowSteps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.workflowStep {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.06);
+}
+
+.stepIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.stepTitle {
+  font-weight: 700;
 }
 
 /* ── Responsive ── */

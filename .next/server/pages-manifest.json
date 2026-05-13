@@ -3,9 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/contact": "pages/contact.js",
-  "/courses/nat": "pages/courses/nat.js",
-  "/courses/jft": "pages/courses/jft.js",
-  "/courses/jlpt": "pages/courses/jlpt.js",
+  "/about": "pages/about.js",
   "/": "pages/index.js",
-  "/about": "pages/about.js"
+  "/universities": "pages/universities.js",
+  "/services": "pages/services.js"
 }
