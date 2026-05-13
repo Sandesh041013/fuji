@@ -163,32 +163,58 @@ export default function Contact() {
             {/* ── Sidebar ── */}
             <div className={`${styles.sidebar} animate-fade-up delay-2`}>
               {/* Direct contact */}
+
               <div className={styles.sideCard}>
-                <h4 className={styles.sideTitle}>Direct Contact</h4>
-                <div className={styles.contactList}>
-                  <a href="mailto:info@fuji-consultancy.com" className={styles.contactRow}>
-                    <span className={styles.contactIconWrap}>✉</span>
-                    <div>
-                      <div className={styles.contactLabel}>Email</div>
-                      <div className={styles.contactVal}>info@fuji-consultancy.com</div>
-                    </div>
-                  </a>
-                  <a href="tel:+81000000000" className={styles.contactRow}>
-                    <span className={styles.contactIconWrap}>✆</span>
-                    <div>
-                      <div className={styles.contactLabel}>Global HQ (Tokyo)</div>
-                      <div className={styles.contactVal}>+81 (0) 000 000 0000</div>
-                    </div>
-                  </a>
-                  <div className={styles.contactRow}>
-                    <span className={styles.contactIconWrap}>⏰</span>
-                    <div>
-                      <div className={styles.contactLabel}>Response Time</div>
-                      <div className={styles.contactVal}>Within 1 business day</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  <h4 className={styles.sideTitle}>Direct Contact</h4>
+
+  <div className={styles.contactList}>
+    
+    <a
+      href="mailto:fujiinternationalconsultancy@gmail.com"
+      className={styles.contactRow}
+    >
+      <span className={styles.contactIconWrap}>✉</span>
+
+      <div>
+        <div className={styles.contactLabel}>Email Address</div>
+
+        <div className={styles.contactVal}>
+          fujiinternationalconsultancy@gmail.com
+        </div>
+      </div>
+    </a>
+
+    <a
+      href="tel:+9779800000000"
+      className={styles.contactRow}
+    >
+      <span className={styles.contactIconWrap}>✆</span>
+
+      <div>
+        <div className={styles.contactLabel}>Contact Number</div>
+
+        <div className={styles.contactVal}>
+          +977 98XXXXXXXX
+        </div>
+      </div>
+    </a>
+
+    <div className={styles.contactRow}>
+      <span className={styles.contactIconWrap}>📍</span>
+
+      <div>
+        <div className={styles.contactLabel}>Office Location</div>
+
+        <div className={styles.contactVal}>
+          Butwal, Rupandehi, Nepal
+        </div>
+      </div>
+    </div>
+
+    
+
+  </div>
+</div>
 
               {/* Offices */}
            {/* Map */}

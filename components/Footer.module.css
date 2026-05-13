@@ -13,7 +13,7 @@
 }
 
 /* ── Brand ── */
-.brand {}
+.brand { }
 
 .logo {
   display: flex;
@@ -61,7 +61,7 @@
 }
 
 /* ── Columns ── */
-.col {}
+.col { min-width: 0; }
 
 .colTitle {
   font-family: var(--font-display);
@@ -103,6 +103,30 @@
   width: 16px;
 }
 
+/* ── Social Links ── */
+.socials {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.socialLink {
+  display: inline-flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.9);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.socialLink:hover {
+  background: var(--primary);
+  transform: translateY(-4px);
+}
+
 /* ── Bottom Bar ── */
 .bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -132,10 +156,7 @@
 
 /* ── Responsive ── */
 @media (max-width: 960px) {
-  .inner {
-    grid-template-columns: 1fr 1fr;
-  }
-  .brand { grid-column: 1 / -1; }
+  .inner { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 560px) {
