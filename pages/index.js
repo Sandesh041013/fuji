@@ -160,41 +160,62 @@ export default function Home() {
 
       {/* ── About Strip ── */}
       <section className={`section section--dark ${styles.aboutStrip}`}>
-        <div className={`container ${styles.aboutInner}`}>
-          <div className={styles.aboutText}>
-            <span className="eyebrow eyebrow--white">About FUJI</span>
+  <div className={`container ${styles.aboutInner}`}>
+    
+    <div className={styles.aboutText}>
+      <span className="eyebrow eyebrow--white">About FUJI</span>
 
-            <h2 className={styles.aboutTitle}>
-              Your Trusted Partner<br />
-              <span className={styles.redText}>for Japan Opportunities</span>
-            </h2>
+      <h2 className={styles.aboutTitle}>
+        Your Trusted Partner
+        <br />
+        <span className={styles.redText}>
+          for Japan Opportunities
+        </span>
+      </h2>
 
-            <div className={styles.dividerWhite} />
+      <div className={styles.dividerWhite} />
 
-            <p className={styles.aboutDesc}>
-              FUJI International Consultancy is committed to helping students and professionals build successful futures in Japan. We provide expert support for study opportunities, employment pathways, visa processing, and relocation guidance every step of the way.
-            </p>
+      <p className={styles.aboutDesc}>
+        FUJI International Consultancy is committed to helping
+        students and professionals build successful futures in
+        Japan. We provide expert support for study opportunities,
+        employment pathways, visa processing, and relocation
+        guidance every step of the way.
+      </p>
 
-            <Button href="/about" variant="ghost" size="md" arrow>
-              Learn More About Us
-            </Button>
-          </div>
+      <Button href="/about" variant="ghost" size="md" arrow>
+        Learn More About Us
+      </Button>
+    </div>
 
-          <div className={styles.aboutVisual} aria-hidden>
-            <div className={styles.visualCard}>
-              <div className={styles.visualFlag}>F</div>
-              <div className={styles.visualLines}>
-                <span /><span /><span />
-              </div>
-            </div>
+    {/* Right Visual */}
+    <div className={styles.aboutVisual} aria-hidden>
 
-            <div className={styles.visualBadge}>
-              <span className={styles.visualBadgeNum}>100+</span>
-              <span className={styles.visualBadgeLabel}>Success Stories</span>
-            </div>
-          </div>
+      <div className={styles.visualCard}>
+
+        {/* Replace manual F with original logo */}
+        <img
+          src="fujibigbg.png"
+          alt="FUJI Logo"
+          className={styles.visualLogo}
+        />
+
+        <div className={styles.visualLines}>
+          <span />
+          <span />
+          <span />
         </div>
-      </section>
+      </div>
+
+      <div className={styles.visualBadge}>
+        <span className={styles.visualBadgeNum}>100+</span>
+        <span className={styles.visualBadgeLabel}>
+          Success Stories
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ── CTA ── */}
       <section className={styles.ctaBanner}>
@@ -209,7 +230,7 @@ export default function Home() {
               </p>
             </div>
 
-            <Button href="/contact" size="lg" arrow>
+            <Button href="/contact" variant="outline"  size="lg" arrow>
               Book a Consultation
             </Button>
           </div>

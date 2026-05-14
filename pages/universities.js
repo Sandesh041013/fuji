@@ -4,29 +4,29 @@ import styles from '../styles/Universities.module.css';
 
 const universities = {
   higherRanked: [
-    { name: 'University of Tokyo', url: 'https://www.u-tokyo.ac.jp', img: '/image.png', location: 'Tokyo' },
-    { name: 'Kyoto University', url: 'https://www.kyoto-u.ac.jp', img: '/image.png', location: 'Kyoto' },
-    { name: 'Osaka University', url: 'https://www.osaka-u.ac.jp', img: '/image.png', location: 'Osaka' },
-    { name: 'Tohoku University', url: 'https://www.tohoku.ac.jp', img: '/image.png', location: 'Sendai' },
-    { name: 'Nagoya University', url: 'https://www.nagoya-u.ac.jp', img: '/image.png', location: 'Nagoya' },
+    { name: 'University of Tokyo', url: 'https://www.u-tokyo.ac.jp', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'Kyoto University', url: 'https://www.kyoto-u.ac.jp', img: '/fujibigbg.png', location: 'Kyoto' },
+    { name: 'Osaka University', url: 'https://www.osaka-u.ac.jp', img: '/fujibigbg.png', location: 'Osaka' },
+    { name: 'Tohoku University', url: 'https://www.tohoku.ac.jp', img: '/fujibigbg.png', location: 'Sendai' },
+    { name: 'Nagoya University', url: 'https://www.nagoya-u.ac.jp', img: '/fujibigbg.png', location: 'Nagoya' },
   ],
   higherMid: [
-    { name: 'Hokkaido University', url: 'https://www.hokudai.ac.jp', img: '/image.png', location: 'Sapporo' },
-    { name: 'Kyushu University', url: 'https://www.kyushu-u.ac.jp', img: '/image.png', location: 'Fukuoka' },
-    { name: 'Waseda University', url: 'https://www.waseda.jp', img: '/image.png', location: 'Tokyo' },
-    { name: 'Keio University', url: 'https://www.keio.ac.jp', img: '/image.png', location: 'Tokyo' },
+    { name: 'Hokkaido University', url: 'https://www.hokudai.ac.jp', img: '/fujibigbg.png', location: 'Sapporo' },
+    { name: 'Kyushu University', url: 'https://www.kyushu-u.ac.jp', img: '/fujibigbg.png', location: 'Fukuoka' },
+    { name: 'Waseda University', url: 'https://www.waseda.jp', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'Keio University', url: 'https://www.keio.ac.jp', img: '/fujibigbg.png', location: 'Tokyo' },
   ],
   regional: [
-    { name: 'Kobe University', url: 'https://www.kobe-u.ac.jp', img: '/image.png', location: 'Kobe' },
-    { name: 'Tokyo Institute of Technology', url: 'https://www.titech.ac.jp', img: '/image.png', location: 'Tokyo' },
-    { name: 'University of the Ryukyus', url: 'https://www.u-ryukyu.ac.jp', img: '/image.png', location: 'Okinawa' },
+    { name: 'Kobe University', url: 'https://www.kobe-u.ac.jp', img: '/fujibigbg.png', location: 'Kobe' },
+    { name: 'Tokyo Institute of Technology', url: 'https://www.titech.ac.jp', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'University of the Ryukyus', url: 'https://www.u-ryukyu.ac.jp', img: '/fujibigbg.png', location: 'Okinawa' },
   ],
   schools: [
-    { name: 'Tokyo International School', url: 'https://www.tisjapan.org', img: '/image.png', location: 'Tokyo' },
-    { name: 'K. International School Tokyo', url: 'https://www.kist.ed.jp', img: '/image.png', location: 'Tokyo' },
-    { name: 'British School in Tokyo', url: 'https://www.bst.ac.jp', img: '/image.png', location: 'Tokyo' },
-    { name: 'Canadian International School Tokyo', url: 'https://www.cistokyo.jp', img: '/image.png', location: 'Tokyo' },
-    { name: 'American School in Japan', url: 'https://www.asij.ac.jp', img: '/image.png', location: 'Chiba' },
+    { name: 'Tokyo International School', url: 'https://www.tisjapan.org', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'K. International School Tokyo', url: 'https://www.kist.ed.jp', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'British School in Tokyo', url: 'https://www.bst.ac.jp', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'Canadian International School Tokyo', url: 'https://www.cistokyo.jp', img: '/fujibigbg.png', location: 'Tokyo' },
+    { name: 'American School in Japan', url: 'https://www.asij.ac.jp', img: '/fujibigbg.png', location: 'Chiba' },
   ],
 };
 
