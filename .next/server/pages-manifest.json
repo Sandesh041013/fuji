@@ -1,8 +1,14 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/universities": "pages/universities.js",
+  "/about": "pages/about.js",
   "/contact": "pages/contact.js",
-  "/": "pages/index.js"
+  "/courses/jft": "pages/courses/jft.js",
+  "/courses/jlpt": "pages/courses/jlpt.js",
+  "/courses/nat": "pages/courses/nat.js",
+  "/gallery": "pages/gallery.js",
+  "/": "pages/index.js",
+  "/services": "pages/services.js",
+  "/universities": "pages/universities.js",
+  "/_document": "pages/_document.js"
 }
