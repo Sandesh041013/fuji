@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import Button from '../components/Button';
+import Button from '../components/Button.jsx';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', company: '', email: '', phone: '', service: '', message: '' });
@@ -46,7 +46,7 @@ export default function Contact() {
             <div className="lg:col-span-2 animate-fadeUp">
               {!submitted ? (
                 <>
-                  <h2 className="text-3xl font-bold font-display text-dark mb-3">Send Us a Message</h2>
+                  <h2 className="text-3xl font-bold text-dark mb-3">Send Us a Message</h2>
                   <p className="text-gray-mid mb-8">Fill in the details below and a consultant will follow up promptly.</p>
 
                   <form onSubmit={handleSubmit} noValidate className="space-y-6">
@@ -172,7 +172,7 @@ export default function Contact() {
               ) : (
                 <div className="text-center py-12">
                   <div className="text-6xl mb-4">✓</div>
-                  <h3 className="text-2xl font-bold font-display text-dark mb-3">Message Received</h3>
+                  <h3 className="text-2xl font-bold text-dark mb-3">Message Received</h3>
                   <p className="text-gray-mid mb-8">
                     Thank you, {form.name.split(' ')[0]}. A senior consultant will be in touch at&nbsp;
                     <strong>{form.email}</strong> within one business day.
@@ -188,7 +188,7 @@ export default function Contact() {
             <div className="space-y-8 animate-fadeUp" style={{ animationDelay: '0.2s' }}>
               {/* Direct Contact Card */}
               <div className="bg-light rounded-lg p-8">
-                <h4 className="font-bold text-dark font-display text-lg mb-6">Direct Contact</h4>
+                <h4 className="font-bold text-dark text-lg mb-6">Direct Contact</h4>
 
                 <div className="space-y-6">
                   <a
@@ -225,7 +225,7 @@ export default function Contact() {
 
               {/* Map Card */}
               <div className="bg-light rounded-lg p-8 overflow-hidden">
-                <h4 className="font-bold text-dark font-display text-lg mb-4">Our Location</h4>
+                <h4 className="font-bold text-dark text-lg mb-4">Our Location</h4>
                 <div className="w-full h-64 rounded-lg overflow-hidden">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7065.765044405892!2d83.462710019117!3d27.69002557785575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996870050fd64cb%3A0x3423c86c678d0c08!2sFuji%20International%20Consultancy!5e0!3m2!1sen!2snp!4v1778056301455!5m2!1sen!2snp"

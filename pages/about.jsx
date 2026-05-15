@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Button from '../components/Button';
+import Button from '../components/Button.jsx';
 import Image from 'next/image';
 
 const values = [
@@ -69,7 +69,7 @@ export default function About() {
           <div className="grid-2">
             <div className="bg-white rounded-lg p-10 border border-gray-light shadow-sm">
               <span className="text-3xl mb-5 block">◎</span>
-              <h3 className="text-2xl font-bold font-display text-dark mb-5">Our Mission</h3>
+              <h3 className="text-2xl font-bold text-dark mb-5">Our Mission</h3>
               <div className="divider" />
               <p className="text-gray-700 leading-relaxed">
                 Our mission is to empower students and professionals by providing accurate guidance, ethical services, and complete support throughout their visa journey. We aim to bridge the gap between dreams and opportunities by helping our clients achieve their international goals with confidence and clarity.
@@ -77,7 +77,7 @@ export default function About() {
             </div>
             <div className="bg-dark rounded-lg p-10 border border-gray-700">
               <span className="text-3xl mb-5 block text-primary">◈</span>
-              <h3 className="text-2xl font-bold font-display text-white mb-5">Our Vision</h3>
+              <h3 className="text-2xl font-bold text-white mb-5">Our Vision</h3>
               <div className="w-12 h-1 bg-primary rounded-sm mb-5" />
               <p className="text-white/55 leading-relaxed">
                 Our vision is to become a leading and most trusted consultancy in the field of international education and employment. We strive to build a future where every individual has access to global opportunities and the right guidance to succeed beyond borders.
@@ -120,7 +120,7 @@ export default function About() {
           <div className="grid-4">
             {team.map(({ name, role, region }, i) => (
               <div key={name} className="text-center text-white animate-fadeUp" style={{ animationDelay: `${(i + 1) * 0.1}s` }}>
-                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center font-display font-black text-xl text-white mx-auto mb-4">
+                <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center font-black text-xl text-white mx-auto mb-4">
                   {name.split(' ').map(w => w[0]).join('')}
                 </div>
                 <div className="font-semibold text-lg mb-1">{name}</div>

@@ -9,11 +9,11 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-3 mb-5">
-            <div className="w-10 h-10 bg-primary text-white font-display font-black text-lg flex items-center justify-center rounded-sm flex-shrink-0">
+            <div className="w-10 h-10 bg-primary text-white font-black text-lg flex items-center justify-center rounded-sm flex-shrink-0">
               F
             </div>
             <div>
-              <div className="font-display font-black text-base uppercase tracking-widest text-white">
+              <div className="font-black text-base uppercase tracking-widest text-white">
                 FUJI
               </div>
               <div className="text-xs font-medium uppercase tracking-wider text-white/40">
@@ -31,7 +31,7 @@ export default function Footer() {
 
         {/* Navigation */}
         <div>
-          <h4 className="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-5">
+          <h4 className="font-bold text-xs uppercase tracking-widest text-white/40 mb-5">
             Navigation
           </h4>
 
@@ -51,7 +51,7 @@ export default function Footer() {
 
         {/* Services */}
         <div>
-          <h4 className="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-5">
+          <h4 className="font-bold text-xs uppercase tracking-widest text-white/40 mb-5">
             Our Services
           </h4>
 
@@ -77,7 +77,7 @@ export default function Footer() {
 
         {/* Contact & Social */}
         <div>
-          <h4 className="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-5">
+          <h4 className="font-bold text-xs uppercase tracking-widest text-white/40 mb-5">
             Contact
           </h4>
 
@@ -110,7 +110,7 @@ export default function Footer() {
             </li>
           </ul>
 
-          <h4 className="font-display font-bold text-xs uppercase tracking-widest text-white/40 mb-4">
+          <h4 className="font-bold text-xs uppercase tracking-widest text-white/40 mb-4">
             Follow Us
           </h4>
 

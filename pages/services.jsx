@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import ServiceCard from '../components/ServiceCard';
-import Button from '../components/Button';
+import ServiceCard from '../components/ServiceCard.jsx';
+import Button from '../components/Button.jsx';
 
 const services = [
   {
@@ -197,7 +197,7 @@ export default function Services() {
                 style={{ animationDelay: `${(i + 1) * 0.1}s` }}
               >
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center font-display font-black text-2xl text-white">
+                  <div className="w-16 h-16 bg-primary rounded-lg flex items-center justify-center font-black text-2xl text-white">
                     {num}
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export default function Services() {
         <div className="container">
           <div className="text-center max-w-3xl mx-auto">
             <span className="eyebrow eyebrow--white">Start Today</span>
-            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold font-display mb-4">
+            <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               Ready to Start Your Japan Journey?
             </h2>
             <p className="text-white/75 mb-10 text-lg leading-relaxed">

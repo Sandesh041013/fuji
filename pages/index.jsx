@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Button from '../components/Button';
-import ServiceCard from '../components/ServiceCard';
+import Button from '../components/Button.jsx';
+import ServiceCard from '../components/ServiceCard.jsx';
 
 const stats = [
   { value: '20+', label: 'Years of Guidance' },
@@ -87,7 +87,7 @@ export default function Home() {
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-7 leading-tight animate-fadeUp delay-1">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-7 leading-tight animate-fadeUp delay-1">
             Your Journey
             <br />
             <span className="text-primary">To Study & Work</span>
@@ -139,7 +139,7 @@ export default function Home() {
                 className="text-center py-8 animate-fadeUp"
                 style={{ animationDelay: `${(i + 1) * 0.1}s` }}
               >
-                <div className="font-display font-black text-3xl md:text-4xl text-primary mb-2.5 leading-none">
+                <div className="font-black text-3xl md:text-4xl text-primary mb-2.5 leading-none">
                   {value}
                 </div>
                 <div className="text-sm font-medium text-gray-mid uppercase tracking-widest">
@@ -210,7 +210,7 @@ export default function Home() {
             <div>
               <span className="eyebrow eyebrow--white">About FUJI</span>
 
-              <h2 className="text-white text-3xl md:text-4xl lg:text-5xl mb-5 font-bold font-display">
+              <h2 className="text-white text-3xl md:text-4xl lg:text-5xl mb-5 font-bold">
                 Your Trusted Partner
                 <br />
                 <span className="text-primary">
@@ -232,7 +232,7 @@ export default function Home() {
             {/* Visual Element */}
             <div className="hidden lg:flex justify-center relative" aria-hidden>
               <div className="w-64 h-96 bg-white/4 border border-white/10 rounded-2xl flex flex-col items-center justify-center gap-14 relative">
-                <div className="w-20 h-20 bg-primary rounded-lg font-display font-black text-3xl text-white flex items-center justify-center flex-shrink-0">
+                <div className="w-20 h-20 bg-primary rounded-lg font-black text-3xl text-white flex items-center justify-center flex-shrink-0">
                   F
                 </div>
 
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
 
               <div className="absolute -bottom-3 -right-8 bg-primary rounded-lg p-4 shadow-red">
-                <div className="font-display font-black text-2xl text-white leading-none mb-1">
+                <div className="font-black text-2xl text-white leading-none mb-1">
                   100+
                 </div>
                 <div className="text-xs uppercase tracking-wider text-white/70 font-medium">
@@ -261,7 +261,7 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold font-display mb-2">
+              <h2 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
                 Ready to Start Your Japan Journey?
               </h2>
               <p className="text-white/75 text-base">

@@ -39,13 +39,13 @@ export default function Universities() {
       <section className="section">
         <div className="container">
           <div className="mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-dark mb-4">Universities in Japan</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-4">Universities in Japan</h1>
             <p className="text-gray-mid text-lg">Higher-ranked institutions appear first. Click any card to visit the official website.</p>
           </div>
 
           {/* Higher Ranked */}
           <div className="mb-20">
-            <h2 className="text-2xl font-bold font-display text-dark mb-8">Higher Ranked Universities</h2>
+            <h2 className="text-2xl font-bold text-dark mb-8">Higher Ranked Universities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {universities.higherRanked.map((u) => (
                 <a
@@ -74,7 +74,7 @@ export default function Universities() {
 
           {/* Higher-Mid Ranked */}
           <div className="mb-20">
-            <h2 className="text-2xl font-bold font-display text-dark mb-8">Higher–Mid Ranked Universities</h2>
+            <h2 className="text-2xl font-bold text-dark mb-8">Higher–Mid Ranked Universities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {universities.higherMid.map((u) => (
                 <a
@@ -103,7 +103,7 @@ export default function Universities() {
 
           {/* Regional & Specialist */}
           <div>
-            <h2 className="text-2xl font-bold font-display text-dark mb-8">Regional & Specialist Universities</h2>
+            <h2 className="text-2xl font-bold text-dark mb-8">Regional & Specialist Universities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {universities.regional.map((u) => (
                 <a
@@ -135,7 +135,7 @@ export default function Universities() {
       <section className="section bg-light">
         <div className="container">
           <div className="mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold font-display text-dark mb-4">International Schools</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-dark mb-4">International Schools</h1>
             <p className="text-gray-mid text-lg">A curated list of international schools. Click to visit the school&apos;s site.</p>
           </div>
 

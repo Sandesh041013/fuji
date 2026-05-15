@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Button from '../../components/Button';
+import Button from '../../components/Button.jsx';
 
 const LEVELS = [
   { name: 'N5', desc: 'Beginner — Basic understanding of Japanese used in everyday situations.' },
@@ -31,7 +31,7 @@ export default function JLPT() {
               <div className="inline-block px-4 py-2 bg-white/10 rounded-full text-sm font-semibold mb-6 text-white/80">
                 Language Certification
               </div>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black font-display text-white mb-3">JLPT</h1>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-3">JLPT</h1>
               <p className="text-3xl md:text-4xl text-white/80 mb-6 font-semibold">Japanese Language Proficiency Test</p>
               <p className="text-lg text-white/65 leading-relaxed mb-8 max-w-lg">
                 The JLPT is the world&apos;s most recognized Japanese proficiency test. Whether you&apos;re aiming for N5 basics or the prestige of N1, our expert instructors guide you through every level with proven methods.
@@ -81,7 +81,7 @@ export default function JLPT() {
             </div>
 
             <div className="bg-light rounded-lg p-8">
-              <h4 className="font-bold text-dark font-display text-lg mb-6">JLPT Levels</h4>
+              <h4 className="font-bold text-dark text-lg mb-6">JLPT Levels</h4>
               <div className="space-y-5">
                 {LEVELS.map((l, i) => (
                   <div key={i} className="flex gap-4">
@@ -139,7 +139,7 @@ export default function JLPT() {
             {SCHEDULE.map((s, i) => (
               <div key={i} className="bg-light rounded-lg p-8 text-center">
                 <div className="text-4xl mb-4">📅</div>
-                <div className="font-bold text-dark font-display text-lg mb-3">{s.label}</div>
+                <div className="font-bold text-dark text-lg mb-3">{s.label}</div>
                 <div className="text-gray-mid text-sm font-semibold mb-2">{s.day}</div>
                 <div className="text-primary font-bold text-base">{s.time}</div>
               </div>

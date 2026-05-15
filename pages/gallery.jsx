@@ -11,7 +11,7 @@ export default function Gallery() {
         <div className="container">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold font-display text-dark mb-4">Gallery</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-dark mb-4">Gallery</h2>
             <div className="w-12 h-1 bg-primary rounded-sm mx-auto mb-6" />
             <p className="text-lg text-gray-mid max-w-2xl mx-auto">
               Explore moments from our students&apos; journeys, classes, and cultural experiences in Japan.
@@ -30,7 +30,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold font-display">Learning</span>
+                <span className="text-white text-2xl font-bold">Learning</span>
               </div>
             </div>
 
@@ -44,7 +44,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-xl font-bold font-display">Culture</span>
+                <span className="text-white text-xl font-bold">Culture</span>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-xl font-bold font-display">Classes</span>
+                <span className="text-white text-xl font-bold">Classes</span>
               </div>
             </div>
 
@@ -72,7 +72,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-xl font-bold font-display">Experience</span>
+                <span className="text-white text-xl font-bold">Experience</span>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold font-display">Community</span>
+                <span className="text-white text-2xl font-bold">Community</span>
               </div>
             </div>
 
@@ -100,7 +100,7 @@ export default function Gallery() {
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white text-xl font-bold font-display">Culture</span>
+                <span className="text-white text-xl font-bold">Culture</span>
               </div>
             </div>
           </div>
